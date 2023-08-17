@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Now</title>
+    <link rel="stylesheet" href="log.css">
+</head>
+<style>
+     p{
+            opacity: 1;
+            color: #fff;
+            margin-top: 1rem;
+        }
+
+        p a{
+            color: #fd4907;
+        }
+        @media (max-width:816px){
+            p, a{
+                font-size: .8rem;
+            }
+        }
+</style>
+<body>
+    <div class="form-container">
+        <h1>Login Now</h1>
+        <form action="LoginServlet" method="post">
+            <input type="tel" name = "phone" placeholder="Phone number" required>
+            
+            <input type="password" name = "password" placeholder="Your Password" required>
+           
+             
+            <input type="submit" value="Login" class="btn " style="cursor: pointer;">
+        </form>
+     
+
+    </div>
+</body>
+</html>

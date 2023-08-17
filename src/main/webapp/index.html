@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&family=Varela+Round&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet"
+href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  </head>
+  <style>
+  .btn3{
+  width:auto;
+  }
+  </style>
+  <body>
+ <!-- Header start -->
+ <header class="header">
+    <a href="#" class="logo"><h2>Daily<span>Worker</span></h2></a>
+
+    <div class="bx bx-menu" id="menu"></div>
+
+    <ul class="navbar  ">
+        <li><a href="index.html"> <i class='bx bxs-home'></i>Home</a></li>
+        <li><a href="WorkerLogin.jsp"><i class='bx bxs-briefcase' ></i>Find Work</a></li>
+        <li><a href="CoustmerLogin.jsp"><i class='bx bxs-user'></i>Find Worker</a></li>
+        <li><a href="#contact"><i class='bx bxs-phone'></i>Contact Us</a></li>
+    </ul>
+
+</header>
+
+
+<!-- home section starts -->
+<section class="home" id="home">
+
+    <div class="box">
+    <h1>A Platform For Daily Workers And Owners</h1>
+   <p>Welcome to DailyWorker, your go-to platform for seamlessly connecting skilled laborers with potential employers seeking their services. Our user-friendly website serves as a dedicated hub where employers and laborers can find each other, making the process of finding work or hiring workers efficient and hassle-free.</p>
+   <div class="buttons">
+    <a href="WorkerLogin.jsp" class="btn">Get Work</a>
+   <a href="CoustmerLogin.jsp" class="btn">Hire Worker</a>
+   </div>
+</div>
+
+</section>
+
+<!-- get work -->
+<section class="getwork" id="getwork">
+
+<h1 style="text-align: center;">Looking For <span>Work...</span></h1>
+
+    <div class="getwork-container">
+        <div class="getwork-text">
+        
+            <h3>Don't worry we'll help you</h3>
+        
+            <p>DailyWorker understands the value of your skills and hard work. We empower you to showcase your expertise, experience, and availability to a wide range of potential employers. Create a comprehensive profile highlighting your skills, certifications, and previous work, allowing employers to assess your suitability for their projects. Browse through job listings tailored to your skill set and preferences, and apply for opportunities that align with your schedule and capabilities. DailyWorker is your tool to access a continuous stream of work opportunities and to establish your reputation in the industry.</p>
+           
+            
+            <a href="WorkerLogin.jsp" class="btn btn2">Register</a>
+            <a href="Login.html" class="btn btn2">Login</a>
+    
+            
+        </div>
+    
+        <div class="getwork-img">
+            <img src="./img1.svg">
+        </div>
+    </div>
+    
+</section>
+
+<!-- get worker section -->
+<section class="getworker" id="getworker">
+
+    <h1 style="text-align: center;">Looking For <span>Workers...</span></h1>
+    
+        <div class="getworker-container">
+            <div class="getworker-text">
+            
+                <h3>We'll Help You To Find Proffessional Workers</h3>
+            
+                <p>Are you in need of skilled and reliable laborers to support your projects? DailyWorker offers a streamlined solution to your staffing needs. Browse through a diverse pool of qualified laborers, each with their skills, experience, and ratings showcased on their profiles. Our advanced search and filtering options make it easy for you to find the perfect match for your requirements. Whether you're running a construction site, a landscaping project, or any other labor-intensive venture, DailyWorker connects you with the right laborers to get the job done.</p>
+               
+                
+                <a href="CoustmerLogin.jsp" class="btn btn2 btn3">search for worker</a>
+               
+        
+                
+            </div>
+        
+            <div class="getworker-img">
+                <img src="./img2.svg" alt="">
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- contact -->
+    <section class="contact" id="contact">
+        
+            <h1>Have Any Suggestion Or Query For Us</h1>
+        
+
+        <div class="form-container">
+            <form action="">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea name="" id="" cols="30" rows="5" placeholder="Your Query Here..."></textarea>
+                <input type="submit" value="Send US" class="btn form-btn">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        
+            <p>All rights reserved <i class='bx bxs-copyright' ></i>ayushmanjha0510@gmail.com and singhshivam1492@gmail.com</p>
+        
+    </footer>
+
+    <!-- javascript -->
+    <script>
+        let menu = document.querySelector('#menu');
+let navbar = document.querySelector('.navbar');
+
+menu.onclick = () =>{
+    navbar.classList.toggle('responsive');
+    menu.classList.toggle('bx-x');
+}
+
+window.onscroll = () =>{
+    navbar.classList.remove('responsive');
+    menu.classList.remove('bx-x');
+}
+    </script>
+  </body>
+</html>
